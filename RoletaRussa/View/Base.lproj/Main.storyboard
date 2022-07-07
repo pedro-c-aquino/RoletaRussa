@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EaR-lp-kvk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Histórico-->
+        <scene sceneID="aUw-O8-Yr6">
+            <objects>
+                <viewController id="Gx3-Za-wvC" customClass="HistoricoViewController" customModule="RoletaRussa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T2B-Pw-i5T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hq9-Cd-Jij">
+                                <rect key="frame" x="0.0" y="713" width="414" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="credit-card" translatesAutoresizingMaskIntoConstraints="NO" id="WO9-Nf-HIu">
+                                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="DMt-fK-Cg6"/>
+                                            <constraint firstAttribute="width" constant="80" id="gLk-rB-aZK"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KS3-tG-Yuc">
+                                        <rect key="frame" x="100" y="10" width="104" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uim-he-dvd">
+                                        <rect key="frame" x="300" y="10" width="104" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDU-lL-4K0">
+                                        <rect key="frame" x="100" y="57" width="304" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.2274509804" green="0.60784313729999995" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Pagar">
+                                                    <attributes>
+                                                        <font key="NSFont" size="17" name="Helvetica-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="VDU-lL-4K0" secondAttribute="trailing" constant="10" id="7li-46-JuK"/>
+                                    <constraint firstItem="VDU-lL-4K0" firstAttribute="leading" secondItem="WO9-Nf-HIu" secondAttribute="trailing" constant="10" id="D0v-QL-gSJ"/>
+                                    <constraint firstItem="uim-he-dvd" firstAttribute="top" secondItem="hq9-Cd-Jij" secondAttribute="top" constant="10" id="D31-Bi-g0d"/>
+                                    <constraint firstItem="VDU-lL-4K0" firstAttribute="top" secondItem="KS3-tG-Yuc" secondAttribute="bottom" constant="20" id="RCa-mB-pkm"/>
+                                    <constraint firstAttribute="height" constant="100" id="Wld-ia-LHM"/>
+                                    <constraint firstAttribute="trailing" secondItem="uim-he-dvd" secondAttribute="trailing" constant="10" id="Xpd-PH-6x9"/>
+                                    <constraint firstItem="WO9-Nf-HIu" firstAttribute="leading" secondItem="hq9-Cd-Jij" secondAttribute="leading" constant="10" id="ZPy-eF-Y6Q"/>
+                                    <constraint firstItem="KS3-tG-Yuc" firstAttribute="top" secondItem="hq9-Cd-Jij" secondAttribute="top" constant="10" id="hML-yT-dFE"/>
+                                    <constraint firstItem="KS3-tG-Yuc" firstAttribute="leading" secondItem="WO9-Nf-HIu" secondAttribute="trailing" constant="10" id="moC-0e-Wgs"/>
+                                    <constraint firstItem="WO9-Nf-HIu" firstAttribute="top" secondItem="hq9-Cd-Jij" secondAttribute="top" constant="10" id="vup-Ho-8qI"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jB9-QC-fnq">
+                                <rect key="frame" x="0.0" y="44" width="414" height="669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wgW-0e-ng9"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="wgW-0e-ng9" firstAttribute="trailing" secondItem="jB9-QC-fnq" secondAttribute="trailing" id="1V4-lx-1Kx"/>
+                            <constraint firstItem="wgW-0e-ng9" firstAttribute="bottom" secondItem="hq9-Cd-Jij" secondAttribute="bottom" id="3mC-pp-70W"/>
+                            <constraint firstItem="hq9-Cd-Jij" firstAttribute="top" secondItem="jB9-QC-fnq" secondAttribute="bottom" id="4Su-wD-Iqi"/>
+                            <constraint firstItem="jB9-QC-fnq" firstAttribute="leading" secondItem="wgW-0e-ng9" secondAttribute="leading" id="4n8-kP-SSU"/>
+                            <constraint firstItem="hq9-Cd-Jij" firstAttribute="leading" secondItem="wgW-0e-ng9" secondAttribute="leading" id="Akl-lO-xlt"/>
+                            <constraint firstItem="wgW-0e-ng9" firstAttribute="trailing" secondItem="hq9-Cd-Jij" secondAttribute="trailing" id="aBt-MM-IWr"/>
+                            <constraint firstItem="jB9-QC-fnq" firstAttribute="top" secondItem="wgW-0e-ng9" secondAttribute="top" id="gf2-69-etF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Histórico" image="line.3.horizontal" catalog="system" id="SiV-nP-FbR">
+                        <color key="badgeColor" red="0.26274509800000001" green="0.59607843140000005" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="historicoTableView" destination="jB9-QC-fnq" id="nWN-bT-Oy2"/>
+                        <outlet property="valueLabel" destination="uim-he-dvd" id="wDc-Zg-b6m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UOc-l2-M7F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321.73913043478262" y="343.52678571428572"/>
+        </scene>
+        <!--Roleta-->
+        <scene sceneID="jJP-Mn-M8I">
+            <objects>
+                <viewController id="Syq-Tx-Smj" customClass="ViewController" customModule="RoletaRussa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wdq-Vd-fnD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="7ou-Mg-KwO">
+                                <rect key="frame" x="80" y="74" width="254" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="tIj-5G-f3a"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pow-rs-TKh">
+                                <rect key="frame" x="50" y="214" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzf-Yo-W8q">
+                                <rect key="frame" x="50" y="258" width="314" height="31"/>
+                                <color key="backgroundColor" red="0.26274509800000001" green="0.59607843140000005" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Rodar Roleta"/>
+                                <connections>
+                                    <action selector="spinRouletteButton:" destination="Syq-Tx-Smj" eventType="touchUpInside" id="ft4-xX-Dmy"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TEq-7H-kDt">
+                                <rect key="frame" x="50" y="339" width="314" height="474"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xAV-Ll-fNO"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="Gzf-Yo-W8q" firstAttribute="top" secondItem="pow-rs-TKh" secondAttribute="bottom" constant="10" id="2CQ-I0-6HD"/>
+                            <constraint firstItem="pow-rs-TKh" firstAttribute="leading" secondItem="Gzf-Yo-W8q" secondAttribute="leading" id="9Uz-0j-VVo"/>
+                            <constraint firstItem="pow-rs-TKh" firstAttribute="trailing" secondItem="Gzf-Yo-W8q" secondAttribute="trailing" id="Bhz-v5-lkI"/>
+                            <constraint firstItem="TEq-7H-kDt" firstAttribute="leading" secondItem="xAV-Ll-fNO" secondAttribute="leading" constant="50" id="Dg1-s0-Ygw"/>
+                            <constraint firstItem="7ou-Mg-KwO" firstAttribute="leading" secondItem="xAV-Ll-fNO" secondAttribute="leading" constant="80" id="Hfa-Dw-esq"/>
+                            <constraint firstItem="Gzf-Yo-W8q" firstAttribute="leading" secondItem="TEq-7H-kDt" secondAttribute="leading" id="MOB-t0-6SE"/>
+                            <constraint firstItem="Gzf-Yo-W8q" firstAttribute="trailing" secondItem="TEq-7H-kDt" secondAttribute="trailing" id="RRT-XL-7Ie"/>
+                            <constraint firstItem="pow-rs-TKh" firstAttribute="top" secondItem="7ou-Mg-KwO" secondAttribute="bottom" constant="10" id="abb-4z-gHD"/>
+                            <constraint firstItem="xAV-Ll-fNO" firstAttribute="trailing" secondItem="TEq-7H-kDt" secondAttribute="trailing" constant="50" id="bSa-dA-Vpz"/>
+                            <constraint firstItem="TEq-7H-kDt" firstAttribute="top" secondItem="Gzf-Yo-W8q" secondAttribute="bottom" constant="50" id="hGp-4p-sgZ"/>
+                            <constraint firstItem="7ou-Mg-KwO" firstAttribute="top" secondItem="xAV-Ll-fNO" secondAttribute="top" constant="30" id="jkw-i1-Ws7"/>
+                            <constraint firstItem="xAV-Ll-fNO" firstAttribute="bottom" secondItem="TEq-7H-kDt" secondAttribute="bottom" id="lxJ-LG-tTL"/>
+                            <constraint firstItem="xAV-Ll-fNO" firstAttribute="trailing" secondItem="7ou-Mg-KwO" secondAttribute="trailing" constant="80" id="vkD-FA-MNv"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Roleta" image="line.3.crossed.swirl.circle" catalog="system" id="nHb-Ib-4b2"/>
+                    <connections>
+                        <outlet property="myTableView" destination="TEq-7H-kDt" id="fps-mG-Vd0"/>
+                        <outlet property="nameTextField" destination="pow-rs-TKh" id="AZd-Di-KTs"/>
+                        <outlet property="spinRouletteButton" destination="Gzf-Yo-W8q" id="fRu-Zg-17U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AJi-eN-3Fo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="-263"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="E7K-m3-eMq">
+            <objects>
+                <tabBarController id="EaR-lp-kvk" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="sJJ-9r-Lt0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Syq-Tx-Smj" kind="relationship" relationship="viewControllers" id="xjX-MQ-ZTk"/>
+                        <segue destination="Gx3-Za-wvC" kind="relationship" relationship="viewControllers" id="PFW-IK-7ZG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1tc-2l-7TK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-568" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="card" width="128" height="128"/>
+        <image name="credit-card" width="128" height="128"/>
+        <image name="line.3.crossed.swirl.circle" catalog="system" width="128" height="121"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
